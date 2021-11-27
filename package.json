@@ -1,0 +1,25 @@
+{
+  "name": "webpack-datagrid",
+  "version": "0.0.0",
+  "author": "Jeff Caves",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "wp-dev": "webpack-dev-server --config ./config/webpack/development.babel.js --progress"
+  },
+  "dependencies": {
+    "@mui/x-data-grid": "4.0.0",
+    "babel-loader": "8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.12.7",
+    "webpack-dev-server": "2.9.3"
+  }
+}
