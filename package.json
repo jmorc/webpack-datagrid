@@ -6,14 +6,20 @@
     "node": "12.x"
   },
   "scripts": {
-    "wp-dev": "webpack-dev-server --config ./config/webpack/development.babel.js --progress"
+    "webpack": "webpack --bail --config ./production.babel.js",
+    "wp-dev": "webpack-dev-server --config ./production.babel.js --progress"
   },
   "dependencies": {
     "@mui/x-data-grid": "4.0.0",
     "babel-loader": "8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "immutability-helper": "2.3.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "@material-ui/core": "4.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",

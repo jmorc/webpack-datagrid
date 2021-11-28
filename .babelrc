@@ -1,0 +1,25 @@
+{
+  "env": {
+    "production": {
+      "compact": true,
+      "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+      "plugins": [
+        "transform-class-properties"
+      ]
+    },
+    "test": {
+      "compact": true,
+      "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+      "plugins": [
+        "transform-class-properties",
+        "istanbul"
+      ]
+    },
+    "development": {
+      "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+      "plugins": [
+        "transform-class-properties"
+      ]
+    }
+  }
+}
