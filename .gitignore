@@ -1,3 +1,4 @@
 node_modules/*
 yarn-error.log
-bundle.js
+app/assets/javascripts/app.bundle.js
+app/assets/javascripts/vendor.bundle.js
