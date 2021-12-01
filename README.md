@@ -18,4 +18,3 @@ The above error occurred in the <ForwardRef> component
 ```
 On the branch `Produce-error-with-datagrid-4` a different console error occurs:
 `RangeError: Maximum call stack size exceeded`
-
