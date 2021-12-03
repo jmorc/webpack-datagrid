@@ -1,39 +1,36 @@
-const update = require("immutability-helper");
+const BabelLoader = require("./loaders/babelLoader");
+const path = require("path");
 const webpack = require("webpack");
-const SharedConfig = require("./shared.babel.js");
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
-const prodConfig = {
-  bail: { $set: true },
-  output: {
-    $merge: {
-      filename: "[name].bundle.js",
-      chunkFilename: "[name].[hash].chunk.js",
-      publicPath: "/",
-    },
-  },
-  plugins: {
-    $push: [
-      new UglifyJSPlugin({
-        uglifyOptions: {
-          mangle: false,
-          output: {
-            // Turned on because emoji and regex is not minified properly using default
-            // https://github.com/facebookincubator/create-react-app/issues/2488
-            ascii_only: true,
-          },
-        },
-      }),
-      new webpack.DefinePlugin({
-        "process.env": {
-          NODE_ENV: JSON.stringify("development"),
-        },
-      }),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: "vendor",
-      }),
-    ],
-  },
+const entry = {
+  app: [path.resolve("./app/main")],
 };
 
-module.exports = update(SharedConfig, prodConfig);
+module.exports = {
+  output: {
+    path: path.resolve("./app/assets/javascripts"),
+    filename: "[name].bundle.js",
+    publicPath: "/assets/",
+  },
+  devServer: {
+    static: "./",
+  },
+  entry: entry,
+  resolve: {
+    modules: ["node_modules"],
+    extensions: [".js", ".jsx"],
+  },
+  module: {
+    strictExportPresence: true,
+    rules: [BabelLoader],
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      update: "immutability-helper",
+    }),
+  ],
+  mode: "development",
+  node: {
+    __filename: true,
+  },
+};

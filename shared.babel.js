@@ -26,6 +26,7 @@ module.exports = {
       update: "immutability-helper",
     }),
   ],
+  mode: "development",
   node: {
     __filename: true,
   },

@@ -2,14 +2,16 @@
   "name": "webpack-datagrid",
   "version": "0.0.0",
   "author": "Jeff Caves",
+  "private": true,
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "webpack": "webpack --bail --config ./production.babel.js",
-    "wp-dev": "webpack-dev-server --config ./production.babel.js --progress"
+    "webpack": "webpack --config ./production.babel.js",
+    "wp-dev": "webpack serve --config ./production.babel.js --progress"
   },
   "dependencies": {
+    "@babel/register": "^7.16.0",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.2.1",
@@ -21,13 +23,14 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^3.8.1"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.12.7",
-    "webpack-dev-server": "2.9.3"
+    "webpack-dev-server": "^4.6.0"
   }
 }
