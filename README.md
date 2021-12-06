@@ -19,12 +19,14 @@ These tests are available as branches on this repo.
 - Produce-error-with-datagrid-4
 - Error-with-datagrid-5
 - Upgrade-webpack-3-to-4
-- main 
+- main
 
 ## Results
 
-| @mui/x-data-grid | Webpack 3 | Webpack 4 |
-| ---------------- |---------- | ------------------ |
-| 5.0.1            |     :x:   | :white_check_mark: |
+| DataGrid package                   | Webpack 3 | Webpack 4 |
+| ---------------------------------- |---------- | ------------------ |
+| @material-ui/x-grid 4.0.0-alhpa.24 |           |                    |
+| @mui/x-data-grid 4.0.0             |     :x:   |                    |
+| @mui/x-data-grid 5.0.1             |     :x:   | :white_check_mark: |
 
 
