@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DataGrid } from '@mui/x-data-grid';
+import { XGrid } from '@material-ui/x-grid';
 
 export default function bobbaTable() {
   const columns = [
@@ -85,10 +85,8 @@ export default function bobbaTable() {
     },
   ];
   return (
-    <div style={{ display: 'flex', height: '100%' }}>
-      <div style={{ flexGrow: 1 }}>
-        <DataGrid columns={columns} rows={rows} />;
+      <div style={{ height: '500px' }}>
+        <XGrid columns={columns} rows={rows} />
       </div>
-    </div>
   );
 }
