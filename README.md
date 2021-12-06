@@ -1,4 +1,5 @@
 # Webpack - DataGrid
+
 Toy app to toubleshoot a bug with DataGrid in webpack 3 app
 
 ## Local setup
@@ -33,7 +34,7 @@ Tests @mui/x-data-grid, version 5.0.1, with webpack 4
 | @mui/x-data-grid 4.0.0             |     :x:            |                    |
 | @mui/x-data-grid 5.0.1             |     :x:            | :white_check_mark: |
 
-Not all combinations were tests, but we are getting console errors whenever `XGrid` is updated to `DataGrid` with webpack 3.  These have only beeen resolved by upgrading the toy app to webpack 4.
+Not all combinations were tried, but we are getting console errors whenever `XGrid` is updated to `DataGrid` with webpack 3.  These have only beeen resolved by upgrading the toy app to webpack 4.
 
 Error with `DataGrid` 4.0.0 and webpack 3:
 
