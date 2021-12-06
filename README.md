@@ -15,15 +15,15 @@ Visit http://localhost:8080/page.html and observe the console error or correctly
 
 Several versions of DataGrid were tested with webpack 3 and 4.
 
-These tests are available as branches on this repo.
+These tests are available as branches in this repo.
 
-- Material-ui-alpha-wp-3
+- `Material-ui-alpha-wp-3`
 Tests @material-ui/x-grid, version 4.0.0-alpha.24 with webpack 3
-- Produce-error-with-datagrid-4
+- `Produce-error-with-datagrid-4`
 Tests @mui/x-data-grid, version 4.0.0, with webpack 3
-- Error-with-datagrid-5
+- `Error-with-datagrid-5`
 Tests @mui/x-data-grid, version 5.0.1, with webpack 3
-- Upgrade-webpack-3-to-4
+- `Upgrade-webpack-3-to-4`
 Tests @mui/x-data-grid, version 5.0.1, with webpack 4
 
 ## Results
