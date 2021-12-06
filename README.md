@@ -38,6 +38,41 @@ Not all combinations were tried, but we are getting console errors whenever `XGr
 
 Error with `DataGrid` 4.0.0 and webpack 3:
 
+```
+Uncaught RangeError: Maximum call stack size exceeded
+    at Function.getter [as a] (vendor.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+    at Zi (app.bundle.js:1)
+```
+
 Error with `DataGrid` 5.0.1 and webpack 3:
 
+```
+app.bundle.js:1 Uncaught ReferenceError: e is not defined
+    at En (app.bundle.js:1)
+    at app.bundle.js:1
+    at app.bundle.js:1
+    at ms (app.bundle.js:1)
+    at app.bundle.js:1
+    at renderWithHooks (app.bundle.js:1)
+    at updateForwardRef (app.bundle.js:1)
+    at beginWork (app.bundle.js:1)
+    at HTMLUnknownElement.callCallback (app.bundle.js:1)
+    at Object.invokeGuardedCallbackImpl (app.bundle.js:1)
+```
+and:
+```
+app.bundle.js:1 The above error occurred in the <ForwardRef> component:
+
+    at http://localhost:8080/app.bundle.js:1:1421854
+    at div
+    at div
+```
 
